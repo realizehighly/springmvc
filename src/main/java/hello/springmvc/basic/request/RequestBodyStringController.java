@@ -20,7 +20,7 @@ import java.nio.charset.StandardCharsets;
 @Controller
 public class RequestBodyStringController {
 
-    //HTTP 메시지 바디의 데이터를 InputStream 을 사용해서 직접 읽을 수 있다
+    //servlet 방식
     @PostMapping("/request-body-string-v1")
     public void requestBodyString(HttpServletRequest request,
                                   HttpServletResponse response) throws IOException {
